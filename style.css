@@ -1,0 +1,124 @@
+* {
+  inset: 0;
+  margin: 0 auto;
+}
+.cloud1 {
+  color: white;
+  font-size: 140px;
+}
+.cloud2 {
+  color: white;
+  font-size: 140px;
+  position: relative;
+  top: 160px;
+}
+.cloud3 {
+  position: relative;
+  color: white;
+  font-size: 140px;
+}
+.cloud4 {
+  position: relative;
+  color: white;
+  font-size: 140px;
+  top: 160px;
+}
+.cloud5 {
+  color: white;
+  font-size: 140px;
+}
+.over {
+  position: relative;
+  font-family: sans-serif;
+  right: 200px;
+  text-align: center;
+  animation: over 2s;
+  display: none;
+}
+@keyframes over {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(3);
+  }
+}
+.header {
+  background: aqua;
+  height: 400px;
+  inset: 0;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+.sun {
+  color: yellow;
+  font-size: 200px;
+  position: relative;
+  left: 1300px;
+  top: 39px;
+}
+.game {
+  position: relative;
+  width: 70%;
+  height: 200px;
+  border-bottom: 1px solid black;
+  margin: auto;
+}
+
+body {
+  background-color: rgb(74, 235, 74);
+  box-shadow: #32325d40 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  /* overflow: hidden; */
+}
+
+#dino {
+  width: 50px;
+  height: 50px;
+  /* border-radius: 40px 10px 40px 10px; */
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Chromium_T-Rex-error-offline.svg/1200px-Chromium_T-Rex-error-offline.svg.png);
+  background-size: 50px 50px;
+  position: relative;
+  top: 150px;
+}
+
+#kaktus {
+  width: 20px;
+  height: 50px;
+  background-image: url(https://cdn-icons-png.flaticon.com/512/861/861783.png);
+  background-size: 20px 60px;
+  border-radius: 20px;
+  object-fit: cover;
+  position: relative;
+  top: 100px;
+  /* left: 580px; */
+  animation: caktusMov 1.5s infinite linear;
+}
+@keyframes caktusMov {
+  0% {
+    left: 580px;
+  }
+  100% {
+    left: -500px;
+  }
+}
+
+.jump {
+  animation: jump 0.5s linear;
+}
+@keyframes jump {
+  0% {
+    top: 150px;
+  }
+  30% {
+    top: 130px;
+  }
+  50% {
+    top: 100px;
+  }
+  80% {
+    top: 130px;
+  }
+  100% {
+    top: 150px;
+  }
+}
